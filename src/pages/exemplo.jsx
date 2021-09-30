@@ -1,5 +1,5 @@
 import React from 'react';
-import Cabecalho from '../components/Cabesalho';
+import Cabecalho from '../components/Cabecalho';
 
 const exemplo = () => {
     return (
