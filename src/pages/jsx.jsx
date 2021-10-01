@@ -1,5 +1,6 @@
 import {Container} from 'react-bootstrap';
 import Button from '@material-ui/core/Button';
+import Layout from '../components/Layout';
 export default function jsx(){
     const a = 1;
     const b = 3;
@@ -10,14 +11,14 @@ export default function jsx(){
     function teste3(){console.log("Ola mundo")};
 
     return (
-        <div>
-            <Container>
-                {teste}
-                {teste2()}
-                <Button variant="contained" color="primary" onClick={teste3}>teste3</Button>
-                <h1>Jsx é um conceito contral</h1>
-                {a * b}
-            </Container>
-        </div>
+ 
+        <Layout title="Apendendo jsx dentro do next">
+            {teste}
+            {teste2()}
+            <Button variant="contained" color="primary" onClick={teste3}>teste3</Button>
+            <h1>Jsx é um conceito contral</h1>
+            {a * b}
+        </Layout>
+ 
     )
 }
